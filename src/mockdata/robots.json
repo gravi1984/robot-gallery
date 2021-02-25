@@ -1,0 +1,61 @@
+[{
+    "id": 1,
+    "name": "Catherine Haggie",
+    "username": "chaggie0",
+    "email": "chaggie0@gizmodo.com",
+    "phone": "680-187-8414"
+  }, {
+    "id": 2,
+    "name": "Halsy Mongeot",
+    "username": "hmongeot1",
+    "email": "hmongeot1@apple.com",
+    "phone": "149-104-2883"
+  }, {
+    "id": 3,
+    "name": "Augustine Spivey",
+    "username": "aspivey2",
+    "email": "aspivey2@blog.com",
+    "phone": "150-903-2927"
+  }, {
+    "id": 4,
+    "name": "Andee Drust",
+    "username": "adrust3",
+    "email": "adrust3@uiuc.edu",
+    "phone": "464-317-5991"
+  }, {
+    "id": 5,
+    "name": "Hershel MacAree",
+    "username": "hmacaree4",
+    "email": "hmacaree4@dailymail.co.uk",
+    "phone": "763-745-6111"
+  }, {
+    "id": 6,
+    "name": "Loleta Conklin",
+    "username": "lconklin5",
+    "email": "lconklin5@edublogs.org",
+    "phone": "653-506-4149"
+  }, {
+    "id": 7,
+    "name": "Barry Petrillo",
+    "username": "bpetrillo6",
+    "email": "bpetrillo6@buzzfeed.com",
+    "phone": "363-141-2883"
+  }, {
+    "id": 8,
+    "name": "Cecelia Gunn",
+    "username": "cgunn7",
+    "email": "cgunn7@uol.com.br",
+    "phone": "737-699-5634"
+  }, {
+    "id": 9,
+    "name": "Ariadne Wyburn",
+    "username": "awyburn8",
+    "email": "awyburn8@merriam-webster.com",
+    "phone": "622-857-8716"
+  }, {
+    "id": 10,
+    "name": "Sidonia Risman",
+    "username": "srisman9",
+    "email": "srisman9@apache.org",
+    "phone": "880-793-4225"
+  }]

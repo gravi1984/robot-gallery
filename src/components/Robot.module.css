@@ -1,0 +1,33 @@
+
+/* 
+CSS in JS 
+dynamically inject in JS
+
+1. Import CSS as module
+import style from './index.css'
+<div className = {styles.app} /> 
+
+2. Impprt CSS as whole
+import './index.css'
+<div classNam = "app" />
+
+*/
+
+.robotItem{
+background-color: cornflowerblue;
+margin: 10px;
+width: auto;
+  }
+  
+
+.robotItem:hover {
+    -webkit-transform: rotate(7deg);      
+    -moz-transform: rotate(7deg);      
+    -o-transform: rotate(-7deg); 
+
+}
+
+.robotItem > img{
+    width: 80%;
+    height: 80%;
+}

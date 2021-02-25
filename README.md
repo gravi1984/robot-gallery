@@ -44,3 +44,26 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+# JSX
+* JSX: HTML + render logic
+* JSX expr => React.createElement() return JS object
+```
+const ele = (
+    <h1 className='greet'>
+        Hello, World!
+    </h1>
+);
+```
+* after compile, produce JS obejct
+```
+const ele = {
+    type: 'h1',
+    props: {
+        className: 'greet',
+        children: 'Hello, World!'
+    }
+};
+```
+[Javascript 王者归来](https://??)
