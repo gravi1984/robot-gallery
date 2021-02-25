@@ -63,12 +63,12 @@
 
 
 .robotList{
- padding: 20px;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   list-style-type: none;
   
 
