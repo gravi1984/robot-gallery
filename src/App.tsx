@@ -8,7 +8,9 @@ import Robot from './components/Robot';
 import ShoppingCart from './components/ShoppingCart';
 
 
-interface Props { }
+interface Props { 
+
+}
 interface State {
   // resource back from api, api return uncontrollable; 
   robotGallery: any;
@@ -17,7 +19,7 @@ interface State {
 
 
 // functional component
-const App: React.FC = (props) => {
+const App: React.FC<Props> = (props) => {
 
   const [count, setCount] = useState<number>(0);
   const [robotGallery, setRobotGallery] = useState<any>([]);
@@ -57,6 +59,7 @@ const App: React.FC = (props) => {
         <img src={logo} className={styles.appLogo} alt="logo" />
         <h1>Robot fantastic online shopping platform</h1>
       </div>
+  
 
       <button onClick={() => {
         setCount(count + 1);

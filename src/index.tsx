@@ -4,9 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const defaultContextValue = {
+  username: "Gravi"
+}; 
+
+export const appContext = React.createContext(defaultContextValue);
+
+
 ReactDOM.render(
   <React.StrictMode>
+    {/* props drilling issue: cross component pass param */}
+    <appContext.Provider value={defaultContextValue}>
     <App />
+    </appContext.Provider>
+   
   </React.StrictMode>,
   document.getElementById('root')
 );
