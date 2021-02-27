@@ -15,8 +15,8 @@ import './index.css'
 
 .robotItem{
 background-color: cornflowerblue;
-margin: 10px;
-width: auto;
+margin: 18px;
+
   }
   
 
@@ -24,7 +24,8 @@ width: auto;
     -webkit-transform: rotate(7deg);      
     -moz-transform: rotate(7deg);      
     -o-transform: rotate(-7deg); 
-
+    transition: 0.5s;
+    scale: (1.2);
 }
 
 .robotItem > img{

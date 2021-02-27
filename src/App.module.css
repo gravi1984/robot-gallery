@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -33,6 +34,7 @@
 
 .app{
   text-align: center;
+  justify-content: center;
 }
 .appHeader{
   display: flex;
@@ -68,9 +70,9 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content:flex-start;
+  align-content: flex-start;
   list-style-type: none;
   
-
 }
 

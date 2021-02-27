@@ -9,6 +9,7 @@ interface RobotProps{
 
 // ES5 object => { f1, f2, f3 }
 const Robot : React.FC<RobotProps> = ({ id, name, email}) => {
+    // props: Immutable; judge if object modified by comparing stored location; functional
     
     return (
     <li className={styles.robotItem}>
