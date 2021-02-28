@@ -3,21 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { AppStateProvider } from "./AppState";
+// const defaultContextValue = {
+//   username: "Gravi"
+// }; 
 
-const defaultContextValue = {
-  username: "Gravi"
-}; 
-
-export const appContext = React.createContext(defaultContextValue);
+// export const appContext = React.createContext(defaultContextValue);
 
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* props drilling issue: cross component pass param */}
-    <appContext.Provider value={defaultContextValue}>
-    <App />
-    </appContext.Provider>
-   
+    <AppStateProvider>
+      {/* props drilling issue: cross component pass param */}
+      <App />
+    </AppStateProvider>
+
   </React.StrictMode>,
   document.getElementById('root')
 );

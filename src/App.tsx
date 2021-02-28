@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import logo from './logo.svg';
 import logo from './assets/images/logo.svg';
 // import './App.css';
 import styles from './App.module.css';
@@ -9,7 +8,6 @@ import ShoppingCart from './components/ShoppingCart';
 
 
 interface Props { 
-
 }
 interface State {
   // resource back from api, api return uncontrollable; 
@@ -60,7 +58,6 @@ const App: React.FC<Props> = (props) => {
         <h1>Robot fantastic online shopping platform</h1>
       </div>
   
-
       <button onClick={() => {
         setCount(count + 1);
         setCount(count + 1); // only increase 1 => useEffect()
