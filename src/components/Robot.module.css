@@ -14,17 +14,18 @@ import './index.css'
 */
 
 .robotItem{
-background-color: cornflowerblue;
-margin: 18px;
-
-  }
+background-color: #4d675a;
+margin: 15px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+padding-bottom: 15px;
+}
   
 
 .robotItem:hover {
     -webkit-transform: rotate(7deg);      
     -moz-transform: rotate(7deg);      
     -o-transform: rotate(-7deg); 
-    transition: 0.5s;
+    transition: 0.3s;
     scale: (1.2);
 }
 

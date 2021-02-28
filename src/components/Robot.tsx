@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import styles from './Robot.module.css';
 import { appContext, appSetStateContext} from "../AppState";
 import ShoppingCart from './ShoppingCart';
+import {Container,Row, Col,Button} from 'react-bootstrap'
 
 interface RobotProps {
     id: number,
@@ -32,7 +33,7 @@ const Robot: React.FC<RobotProps> = ({ id, name, email }) => {
 
         <div className={styles.robotItem}>
             <img alt="robot" src={`https://robohash.org/${id}`} />
-            <h2>{name}</h2>
+            <h4>{name}</h4>
             <p>{email}</p>
             <p>author: {value.username}</p>
             <button onClick={addToCart}>add to cart</button>

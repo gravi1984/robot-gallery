@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import logo from './assets/images/logo.svg';
-// import './App.css';
 import styles from './App.module.css';
 import robots from './mockdata/robots.json';
 import Robot from './components/Robot';
 import ShoppingCart from './components/ShoppingCart';
 
 
-interface Props { 
-}
+interface Props {}
 interface State {
   // resource back from api, api return uncontrollable; 
   robotGallery: any;
@@ -24,9 +22,9 @@ const App: React.FC<Props> = (props) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>();
 
-  useEffect(() => {
-    document.title = `click ${count} times`
-  }, [count]);
+  // useEffect(() => {
+  //   document.title = `click ${count} times`
+  // }, [count]);
 
   // second param: monitor state[], if not update every update, dead call
   useEffect(() => {
@@ -58,13 +56,13 @@ const App: React.FC<Props> = (props) => {
         <h1>Robot fantastic online shopping platform</h1>
       </div>
   
-      <button onClick={() => {
+      {/* <button onClick={() => {
         setCount(count + 1);
         setCount(count + 1); // only increase 1 => useEffect()
       }}>
         Click
       </button>
-      <span>count: {count}</span>
+      <span>count: {count}</span> */}
 
       <ShoppingCart />
 
@@ -76,7 +74,6 @@ const App: React.FC<Props> = (props) => {
             {robotGallery.map(r => <Robot id={r.id} email={r.email} name={r.name} />)}
           </ul>
         </div>) :
-
         <h2>Loading Data...</h2>
       }
 

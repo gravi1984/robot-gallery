@@ -1,7 +1,10 @@
 import React from "react";
 import styles from "./ShoppingCart.module.css";
-import { FiShoppingCart } from "react-icons/fi"
-import { appContext } from "../AppState"
+import { FiShoppingCart } from "react-icons/fi";
+import { appContext } from "../AppState";
+
+import {Container,Row, Col,Button} from 'react-bootstrap'
+
 
 //define prop state types: type /interface
 interface Props {}
@@ -36,10 +39,14 @@ class ShoppingCart extends React.Component<Props, State> {
 
     render() {
         return (
+            
+            
          <appContext.Consumer>
              {(value) => {
-                 return( <div className={styles.cartContainer}>
-                    <button className={styles.button}
+                 
+                 return(                      
+                 <div className={styles.cartContainer}>
+                    <button 
                         // setState: async, react optimized set sequence
                         onClick={this.handleClick}
                     >
@@ -59,9 +66,12 @@ class ShoppingCart extends React.Component<Props, State> {
                             <li>robot 2</li> */}
                         </ul>
                     </div>
-                </div>);
+                </div>
+                );
 
              }}
+
+             
          </appContext.Consumer>
         )
 

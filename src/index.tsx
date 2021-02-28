@@ -4,11 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AppStateProvider } from "./AppState";
-// const defaultContextValue = {
-//   username: "Gravi"
-// }; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-// export const appContext = React.createContext(defaultContextValue);
+import {Container,Row, Col,Button} from 'react-bootstrap'
+
 
 
 ReactDOM.render(
